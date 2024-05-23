@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:      
+  redis:
+    image: redis
+    container_name: redis_result_backend
+    ports:
+      - 6379:6379
+
+  rabbitmq:
+    image: rabbitmq
+    container_name: rabbitmq_msq_broker
+    ports:
+      - 5672:5672
